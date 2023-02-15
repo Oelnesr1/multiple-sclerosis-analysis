@@ -80,3 +80,7 @@ else
   echo "Error: the second argument must be one of 'single' and 'double'" >&2
   exit 1
 fi
+
+wait
+
+echo "all done!"
