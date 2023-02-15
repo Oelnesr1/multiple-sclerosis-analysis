@@ -15,10 +15,10 @@ for ((i=0;i<$num_ids;i++)); do
     (
         current_id=$(($first_id_num + $i))
         current_full_id="SRR${current_id}"
-        echo "starting task $i.."
+        echo "starting task $current_id"
         prefetch "$current_full_id"
         fasterq-dump /data/musers/elnesro/MS-data/SRA_toolkit/sra/${current_full_id}.sra --outdir /data/musers/elnesro/MS-data/Datasets/$dataset_name/FASTERQ -t /tmp --mem 2G --threads 8 -v
-        echo "finished task $i"
+        echo "finished task $current_id"
         sleep $(( (RANDOM % 3) + 1))
     ) &
 
