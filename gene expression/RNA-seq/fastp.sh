@@ -13,10 +13,10 @@ if [ "$2" == "single" ]; then
     (
     file="${file%.*}"
     file="${file#*/*/*/*/*/*/*/*/}"
+    echo "starting task $file.."
     time ~/fastp -i $dir/FASTERQ/$file".fastq" -o $file"_fp.fq" -h $file"_fp.html" -j $file"_fp.json" -V -x -l 36 -r -w 4
     rm $file"_fp.json"
         
-        echo "starting task $file.."
         sleep $(( (RANDOM % 3) + 1))
     ) &
 
@@ -32,10 +32,10 @@ elif [ "$2" == "double" ]; then
     (
     file="${file%_*}"
     file="${file#*/*/*/*/*/*/*/*/}"
+    echo "starting task $file.."
     time ~/fastp -i $dir/FASTERQ/$file"_1.fastq" -I $dir/FASTERQ/$file"_2.fastq" -o $file"_1_fp.fq" -O $file"_2_fp.fq" -h $file"_fp.html" -j $file"_fp.json" -V -x -l 36 -r -w 4
     rm $file"_fp.json"
     
-        echo "starting task $file.."
         sleep $(( (RANDOM % 3) + 1))
     ) &
 
@@ -51,3 +51,6 @@ else
   exit 1
 fi
 
+wait
+
+echo "all done"
