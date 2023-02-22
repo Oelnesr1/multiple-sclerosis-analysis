@@ -47,4 +47,8 @@ Coming soon.
 Most of these are files that were created during the process of testing and experimenting different methods or verifying results and are not used as part of the final pipeline. They are included here for completion's sake.
 
 
-Note: All code was written by me unless otherwise stated at the top of the file.
+#Notes: 
+
+All code was written by me unless otherwise stated at the top of the file.
+
+Paths to file names, directories, or other programs are inherently going to be broken because this was adapted to my laptop and computational system and not for this arrangement on GitHub. I apologize for the inconvenience.
