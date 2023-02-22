@@ -45,3 +45,6 @@ Coming soon.
 # Other:
 
 Most of these are files that were created during the process of testing and experimenting different methods or verifying results and are not used as part of the final pipeline. They are included here for completion's sake.
+
+
+Note: All code was written by me unless otherwise stated at the top of the file.
