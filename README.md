@@ -20,15 +20,20 @@ For each dataset, the SRR numbers for all of the samples in the dataset need to 
 
 # Microarray:
 
-Right now, I have only created a script for analyzing microarray data from this type of array: Affymetrix Human Genome U133A. I currently plan on expanding it further. However, the ./gene expression/microarray/MyMicroarray.R file is able to analyze microarray and created a ranked list of differentially expressed genes from the analysis.
+Right now, I have only created a script for analyzing microarray data from this type of array: Affymetrix Human Genome U133A. I currently plan on expanding it further. However, the 
+
+./gene expression/microarray/MyMicroarray.R file is able to analyze microarray and created a ranked list of differentially expressed genes from the analysis.
 
 # Rank Aggregation:
 
-This is the step where the ranked lists are combined. ./rank aggregation/BiG.R takes the ranked lists output from the differential gene expression analysis and performs rank aggregation on it to produce a single list.
+This is the step where the ranked lists are combined. 
+
+./rank aggregation/BiG.R takes the ranked lists output from the differential gene expression analysis and performs rank aggregation on it to produce a single list.
 
 # Pathway Analysis:
 
 ./pathway analysis/clusterProfiler.R performs gene set enrichment analysis on the Molecular Signatures Database for each of the input ranked lists.
+
 ./pathway analysis/pathway_analysis.R (I'm so creative at coming up with names) performs the same gene set enrichment analysis algorithm on the following databases: Gene Ontology, Reactome, Kyoto Encyclopedia of Genes and Genomes, Kyoto Encylopedia of Genes and Genomes Modules, Disease Ontology, Disease Gene Network, and WikiPathways.
 
 For each analysis a dot plot and file for the enriched / depleted gene sets and pathways are created. 
