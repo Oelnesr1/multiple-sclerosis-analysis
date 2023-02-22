@@ -1,3 +1,6 @@
+# I did not make this file! This code was obtained from https://github.com/baillielab/comparison_of_RA_methods/blob/main/algorithms/BiG_code_platform_changed.R.
+# I made slight alterations to this file to fit my purposes better.
+
 library(truncnorm)
 #' (Li et al., 2018) provided by author.
 #' Truncated Gamma distribution
